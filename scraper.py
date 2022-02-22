@@ -36,7 +36,7 @@ colors = [lg, w, r, cy]
 def banner():
     f = pyfiglet.Figlet(font='slant')
     logo = f.renderText('Telegram')
-    print(random.choice(colors) + logo + rs)
+    #print(random.choice(colors) + logo + rs)
 
 def clr():
     if os.name == 'nt':
