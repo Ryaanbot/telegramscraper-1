@@ -1,4 +1,3 @@
-import requests
 from telethon.sync import TelegramClient
 from telethon.errors.rpcerrorlist import PhoneNumberBannedError
 import pickle, pyfiglet
@@ -15,6 +14,12 @@ ye = Fore.YELLOW
 r = Fore.RED
 n = Fore.RESET
 colors = [lg, r, w, cy, ye]
+
+try:
+    import requests
+except ImportError:
+    print(f'{lg}[i] Installing module - requests...{n}')
+    os.system('pip install requests')
 
 def banner():
     f = pyfiglet.Figlet(font='slant')
