@@ -23,9 +23,9 @@ except ImportError:
 
 def banner():
     f = pyfiglet.Figlet(font='slant')
-    banner = f.renderText('Telegram')
+    banner = f.renderText('indostore')
     #print(f'{random.choice(colors)}{banner}{n}')
-    print(r+'  Version: 1.1 | Author: Shabani'+n+'\n')
+    print(r+'  Version: 1.1 | Author: Rommel'+n+'\n')
 
 
 def clr():
